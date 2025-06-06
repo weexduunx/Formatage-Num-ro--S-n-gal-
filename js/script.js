@@ -245,7 +245,7 @@ function downloadFile(content, filename, contentType) {
 window.onload = function() {
     const sampleData = `name;phone
 IDRISSA NDIOUCK;+221784673070
-WELIMATA NDIOUCK;221773997993`;
+WELIMATA NDIOUCK;221771234567`;
     
     document.getElementById('csvContent').value = sampleData;
 };
