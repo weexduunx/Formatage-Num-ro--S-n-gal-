@@ -245,7 +245,10 @@ function downloadFile(content, filename, contentType) {
 window.onload = function() {
     const sampleData = `name;phone
 IDRISSA NDIOUCK;+221784673070
-WELIMATA NDIOUCK;221771234567`;
+WELIMATA NDIOUCK;221771234567
+SENEGAL NDIAYE;332211234
+NDAKAROU DIAL DIOP;791234567
+NDAKAROU DIAL DIOP;781234567`;
     
     document.getElementById('csvContent').value = sampleData;
 };
