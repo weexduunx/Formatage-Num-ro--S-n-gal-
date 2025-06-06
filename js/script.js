@@ -150,7 +150,7 @@ function processPhoneNumbers() {
         document.getElementById('alreadyCorrectCount').textContent = alreadyCorrectCount;
 
         // Show results
-        showStatus(`✅ Traitement terminé! ${correctedCount} les numéros de téléphone ont été corrigés.`, 'success');
+        showStatus(`✅ Traitement terminé! ${correctedCount} numéros de téléphone ont été corrigés.`, 'success');
         document.getElementById('resultsSection').style.display = 'block';
         
         // Show preview of corrections
@@ -197,7 +197,7 @@ function displayPreview() {
 
 function downloadCorrectedCSV() {
     if (correctedData.length === 0) {
-        alert('No data to download. Please process the CSV first.');
+        alert('Aucune donnée à télécharger. Veuillez d\'abord traiter le fichier CSV..');
         return;
     }
 
@@ -212,12 +212,12 @@ function downloadCorrectedCSV() {
         header: true
     });
 
-    downloadFile(csv, 'Employes-contratActif-2025-phoneCorrected.csv', 'text/csv');
+    downloadFile(csv, 'NumerosCorriges.csv', 'text/csv');
 }
 
 function downloadCorrectedList() {
     if (corrections.length === 0) {
-        alert('No corrections were made!');
+        alert('Aucune correction n\'a été apportée!');
         return;
     }
 
@@ -226,7 +226,7 @@ function downloadCorrectedList() {
         header: true
     });
 
-    downloadFile(csv, 'phone-corrections-list.csv', 'text/csv');
+    downloadFile(csv, 'listes-des-numeros-corriges.csv', 'text/csv');
 }
 
 function downloadFile(content, filename, contentType) {
